@@ -14,3 +14,113 @@
 
 
 
+body{
+	max-width: 1600px;
+	position: relative;
+}
+
+
+.container{
+	width: 1210px;
+	margin: 0 auto;
+}
+
+.header{
+	width: 1600px;
+	height: 750px;
+	background-image: url("../img/header/bg.png");
+}
+
+.nav{
+	display: inline-block;
+	margin-top: 50px;
+	margin-left: 235px;
+	// float: right;
+	// margin-top: 0;
+	justify-content: flex-end;
+}
+
+.nav__link{
+	color: #ffffff;
+	font-family: "Gentium Book Basic";
+	font-size: 21px;
+	font-weight: 700;
+	margin-left: 30px;
+	justify-content: center;
+}
+
+.logo{
+	width: 128px;
+	height: 92px;
+	margin-top: 8px;
+	margin-left: 195px;
+	justify-content: flex-start;
+}
+
+.social.social--header{
+	justify-content: flex-end;
+}
+
+.logo_nav_social{
+	display: flex;
+}
+
+.home{
+	position: absolute;
+	top: 235px;
+	text-align: center;
+	margin-left: 315px;
+}
+
+.h1__home{
+	opacity: 0.92;
+	text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
+	color: #ffffff;
+	font-family: "Yeseva One";
+	font-size: 90px;
+	font-weight: 400;
+}
+
+
+.decoration-white{
+	width: 232px;
+	height: 43px;
+	background-image: url("../img/header/decoration.png");
+	margin-left: 485px;
+	margin-top: 34px;
+}
+
+.button{
+	width: 228px;
+	height: 57px;
+}
+
+.button-wrapper{
+	// position: absolute;
+	// top: 170px;
+	text-align: center;
+}
+
+.button--dark{
+	border: 1px solid #000000;
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0.8;
+	padding: 22px 52px;
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.button--light{
+	border: 1px solid #ffffff;
+	background-color: rgba(255, 255, 255, 0.28);
+	opacity: 0.7;
+	padding: 22px 52px;
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+}

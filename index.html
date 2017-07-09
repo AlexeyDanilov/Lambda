@@ -12,7 +12,8 @@
 <body>
 	<heder class="header">
 		<div class="container">
-			<div class="logo"></div>
+			<div class="logo_nav_social">
+				<div class="logo"><img src="img/header/logo.png" alt=""></div>
 			<nav class="nav">
 				<a href="#" class="nav__link">Home</a>
 				<a href="#" class="nav__link">About</a>
@@ -25,6 +26,7 @@
 				<a href="#" class="social__item social__item--tw"></a>
 				<a href="#" class="social__item social__item--yt"></a>
 				<a href="#" class="social__item social__item--fb"></a>
+			</div>	
 			</div>
 		</div>
 	</heder>
@@ -32,7 +34,8 @@
 	<main class="content">
 		<section class="home">
 			<div class="container">
-				<h1 class="h1">the right ingredients for the right food</h1>
+				<h1 class="h1 h1__home">the right ingredients
+				<br> for the right food</h1>
 				<div class="decoration decoration-white"></div>
 				<div class="button-wrapper">
 					<a href="#" class="button button--dark">BOOK A TABLE</a>
@@ -70,13 +73,13 @@
 						
 					<ul class="ingredients__list">
 						<li class="ingredients__item">
-							<img src="" alt="">
+							<img src="img/flower/cereals.png" alt="">
 						</li>
 						<li class="ingredients__item">
-							<img src="" alt="">
+							<img src="img/flower/image-orange.png" alt="">
 						</li>
 						<li class="ingredients__item">
-							<img src="" alt="">
+							<img src="img/flower/bread.png" alt="">
 						</li>
 
 					</ul>
@@ -85,7 +88,7 @@
 		</section>
 		<section class="menu">
 			<div class="container">
-				<div class="menu__item">
+				<div class="menu__block">
 					<h2 class="h2">Appetisers</h2>
 					<div class="decoration decoration--yellow"></div>
 					<ul class="menu__list">
@@ -96,52 +99,103 @@
 							</div>
 							<p class="p p--dark">Refreshing traditional cucumber and garlic yoghurt dip.</p>
 						</li>
-
-						<!-- так все блоки сделать -->
-
-						<li><span class="menu--name">Aubergine_Salad</span><span class="menu--price">$5.50</span>
-						<p>.Pureed eggplant, garlic, green pepper and tomato dip.</p></li>
-						<li><span class="menu--name">Aubergine_Salad</span><span class="menu--price">$5.25</span>
-						<p>Pureed eggplant, garlic, green pepper and tomato dip.</p></li>
-					</ul>
-
-					
+						<li class="menu__item">
+							<div class="menu-title">
+								<span class="menu__name">Aubergine_Salad</span>
+								<span class="menu__price">$5.50</span>
+							</div>
+							<p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>							
+						</li>
+						<li class="menu__item">
+							<div class="menu-title">
+								<span class="menu__name">Aubergine_Salad</span>
+								<span class="menu__price">$5.25</span>	
+							</div>
+							<p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+						</li>
+					</ul>					
 				</div>
-				<div class="menu__item">
+
+				<div class="menu__block">
 					<h2 class="h2">Starters</h2>
 					<div class="decoration decoration--yellow"></div>
-					<ul>
-						<li><span class="menu--name">Haloumi</span><span class="menu--price">$3.99</span>
-						<p>Refreshing traditional cucumber and garlic yoghurt dip.</p></li>
-						<li><span class="menu--name">Spinach_Pie</span><span class="menu--price">$5.50</span>
-						<p>.Pureed eggplant, garlic, green pepper and tomato dip.</p></li>
-					</ul>
-					
+					<ul class="menu__list">
+						<li class="menu__item">
+							<div class="menu-title">
+								<span class="menu__name">Haloumi</span>
+								<span class="menu__price">$3.99</span>	
+							</div>
+							<p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+						</li>
+						<li class="menu__item">
+							<div class="menu-title">
+								<span class="menu__name">Spinach_Pie</span>
+								<span class="menu__price">$5.50</span>
+							</div>
+							<p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
+						</li>
+					</ul>					
 				</div>
-				<div class="menu__item">
+
+				<div class="menu__block">
 					<h2 class="h2">Salads</h2>
 					<div class="decoration decoration--yellow"></div>
-					<ul>
-						<li><span class="menu--name">Olive_Special</span><span class="menu--price">$5.99</span>
-						<p>Refreshing traditional cucumber and garlic yoghurt dip.</p></li>
-						<li><span class="menu--name">Greek_Salad</span><span class="menu--price">$5.50</span>
-						<p>.Pureed eggplant, garlic, green pepper and tomato dip.</p></li>
-						<li><span class="menu--name">Gusto_Salad</span><span class="menu--price">$5.25</span>
-						<p>Pureed eggplant, garlic, green pepper and tomato dip.</p></li>
+					<ul class="menu__list">
+						<li class="menu-item">
+							<div class="menu-title">
+								<span class="menu__name">Olive_Special</span>
+								<span class="menu__price">$5.99</span>	
+							</div>						
+							<p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+						</li>
+						<li class="menu-item">
+							<div class="menu-title">
+								<span class="menu__name">Greek_Salad</span>
+								<span class="menu__price">$5.50</span>	
+							</div>
+							<p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
+						</li>
+						<li class="menu-item">
+							<div class="menu-title">
+								<span class="menu__name">Gusto_Salad</span>
+								<span class="menu__price">$5.25</span>	
+							</div>
+							<p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+						</li>
 					</ul>
 				</div>
-				<div class="menu__item">
+				<div class="menu__block">
 					<h2 class="h2">Main Dishes</h2>
 					<div class="decoration decoration--yellow"></div>
-					<ul>
-						<li><span class="menu--name">Cornish_Mackerel</span><span class="menu--price">$5.99</span>
-						<p>Refreshing traditional cucumber and garlic yoghurt dip.</p></li>
-						<li><span class="menu--name">Roast_Lamb</span><span class="menu--price">$5.50</span>
-						<p>.Pureed eggplant, garlic, green pepper and tomato dip.</p></li>
-						<li><span class="menu--name">Fried_Chicken</span><span class="menu--price">$5.25</span>
-						<p>Pureed eggplant, garlic, green pepper and tomato dip.</p></li>
-						<li><span class="menu--name">Pastitsio</span><span class="menu--price">$5.99</span>
-						<p>Refreshing traditional cucumber and garlic yoghurt dip.</p></li>
+					<ul class="menu__list">
+						<li class="menu-item">
+							<div class="menu-title">
+								<span class="menu__name">Cornish_Mackerel</span>
+								<span class="menu__price">$5.99</span>	
+							</div>
+							<p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+						</li>
+						<li class="menu-item">
+							<div class="menu-title">
+								<span class="menu__name">Roast_Lamb</span>
+								<span class="menu__price">$5.50</span>	
+							</div>
+							<p>.Pureed eggplant, garlic, green pepper and tomato dip.</p>
+						</li>
+						<li class="menu-item">
+							<div class="menu-title">
+								<span class="menu__name">Fried_Chicken</span>
+								<span class="menu__price">$5.25</span>	
+							</div>
+							<p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+						</li>
+						<li class="menu-item">
+							<div class="menu-title">
+								<span class="menu__name">Pastitsio</span>
+								<span class="menu__price">$5.99</span>	
+							</div>
+							<p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -160,8 +214,8 @@
 		<section class="reservation">
 			<div class="container">
 				<div class="reservation__images">
-					<img src="" alt="">
-					<img src="" alt="">
+					<img src="img/food/food_table.png" alt="">
+					<img src="img/food/sweet.png" alt="">
 				</div>
 				<div class="reservation__info">
 					<h2 class="h2">Just the right food</h2>
@@ -170,8 +224,18 @@
 						If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.
 						Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.
 					</p>
-					<form action="" class="reservation__form">
-						
+					<form class="form" action="" class="reservation__form">
+						<label>Name<input type="text" name="name" placeholder="your name *"></label>
+
+						<label>Name<input type="text" name="e-mail" placeholder="your email *"></label>
+
+						<label>Date<input type="text" name="date" placeholder="date *"></label>
+
+						<label>Party number
+							<select name="number" id="">
+								<option value="">party number</option>
+							</select>
+						</label>
 					</form>
 				</div>
 			</div>
@@ -181,7 +245,37 @@
 
 	<footer class="footer">
 		<div class="container">
-			
+			<ul class="footer">
+				<li class="footer__item">
+					<h3 class="h3 h3--white">About Us</h3>
+					<div class="decoration decoration-white"></div>
+					<p class="p p--white">
+						Lambda's new and expanded Chelsea location represents a truly authentic Greek patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.
+						<span class="span-center">Lamda the best restaurant in town</span>
+					</p>
+				</li>
+				<li class="footer__item">
+					<h3 class="h3 h3--white">Opening Hours</h3>
+					<div class="decoration decoration-white"></div>
+					<p class="p p--white">
+						Mon-Thu: 7:00am-8:00pm 
+						Fri-Sun: 7:00am-10:00pm
+					</p>
+					<img src="img/footer/cards.png" alt="" class="pay-systems">
+				</li>
+				<li class="footer__item">
+					<h3 class="h3 h3--white">Our Location</h3>
+					<div class="decoration decoration-white"></div>
+					<p class="p p--white">
+						19th Paradise Street Sitia
+						128 Meserole Avenue
+					</p>
+					<a href="#" class="social"></a>
+					<a href="#" class="social"></a>
+					<a href="#" class="social"></a>
+					<a href="#" class="social"></a>	
+				</li>	
+			</ul>
 		</div>
 	</footer>
 </body>
