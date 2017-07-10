@@ -154,47 +154,28 @@ body {
 }
 
 .h1{
-	color: #f3f3f3;
-	font-family: "Roboto Slab";
-	font-size: 40px;
-	font-weight: 700;
-	line-height: 35px;
+	opacity: 0.92;
+	text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
+	color: #ffffff;
+	font-family: "Yeseva One";
+	font-size: 90px;
+	font-weight: 400;
 }
 
 .h2{
-	color: #a8a8a8;
-	font-family: "Roboto Slab";
-	font-size: 32px;
-	font-weight: 700;
-	line-height: 35px;
+	color: #cc9900;
+	font-family: "Yeseva One";
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 24px;
 }
 
 .h3{
-	color: #4e4e4e;
-	font-family: "Roboto Slab";
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 1;
+	color: #fefefe;
+	font-family: "Yeseva One";
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 24px;
 }
 
-.h4{
 
-	color: #4e4e4e;
-	font-family: "Roboto Condensed";
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 35px;
-	text-transform: uppercase;
-}
-
-.h4.h4-light-grey{
-	color: #6c6c6c;
-}
-
-.h5{
-color: #a8a8a8;
-font-family: "Roboto Slab";
-font-size: 13px;
-font-weight: 400;
-line-height: 1;
-}

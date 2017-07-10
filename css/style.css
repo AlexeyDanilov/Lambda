@@ -12,16 +12,20 @@
 // 	font-style: normal; 
 // }
 
-
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Yeseva+One&subset=cyrillic,cyrillic-ext,latin-ext');
 
 body{
 	max-width: 1600px;
 	position: relative;
+	font-family: 'Gentium Book Basic', serif;
+	font-family: 'Yeseva One', cursive;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 
 .container{
-	width: 1210px;
+	width: 1250px;
 	margin: 0 auto;
 }
 
@@ -29,16 +33,14 @@ body{
 	width: 1600px;
 	height: 750px;
 	background-image: url("../img/header/bg.png");
+	display: flex;
+	justify-content: space-between;
 }
 
-.nav{
-	display: inline-block;
-	margin-top: 50px;
-	margin-left: 235px;
-	// float: right;
-	// margin-top: 0;
-	justify-content: flex-end;
-}
+ .nav{
+ 	margin-top: 50px;
+ 	margin-left: 235px;
+ }
 
 .nav__link{
 	color: #ffffff;
@@ -52,13 +54,25 @@ body{
 .logo{
 	width: 128px;
 	height: 92px;
-	margin-top: 8px;
-	margin-left: 195px;
-	justify-content: flex-start;
+	
 }
 
-.social.social--header{
-	justify-content: flex-end;
+.social__header{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 18px;
+	margin-top: 50px;
+}
+
+.social__item {
+	width: 21px;
+	height: 21px;
+	margin-left: 16px;
+	background-color: red;
+}
+
+.social__item:first-child{
+	margin-left: 0;
 }
 
 .logo_nav_social{
@@ -68,17 +82,12 @@ body{
 .home{
 	position: absolute;
 	top: 235px;
-	text-align: center;
-	margin-left: 315px;
+    text-align: center;
+	margin-left: 140px;
 }
 
 .h1__home{
-	opacity: 0.92;
-	text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
-	color: #ffffff;
-	font-family: "Yeseva One";
-	font-size: 90px;
-	font-weight: 400;
+	margin: 0 auto;
 }
 
 
@@ -86,8 +95,9 @@ body{
 	width: 232px;
 	height: 43px;
 	background-image: url("../img/header/decoration.png");
-	margin-left: 485px;
+	margin-left: 510px;
 	margin-top: 34px;
+	margin-bottom: 33px;
 }
 
 .button{
@@ -96,9 +106,9 @@ body{
 }
 
 .button-wrapper{
-	// position: absolute;
-	// top: 170px;
 	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 .button--dark{
@@ -111,6 +121,9 @@ body{
 	font-size: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
+	margin-right: 30px;
+	display: flex;
+	align-items: center;
 }
 
 .button--light{
@@ -123,4 +136,11 @@ body{
 	font-size: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+
+.right-food{
+	background: url("../img/right_food/background.png");
+	1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
 }
