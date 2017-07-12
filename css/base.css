@@ -83,6 +83,9 @@ footer, header, hgroup, main, menu, nav, section {
 
 ol, ul {
 	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 70px;
 }
 
 blockquote, q {
@@ -178,4 +181,9 @@ body {
 	line-height: 24px;
 }
 
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
 

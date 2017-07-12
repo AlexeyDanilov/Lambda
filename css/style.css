@@ -29,6 +29,16 @@ body{
 	margin: 0 auto;
 }
 
+.decoration{
+	width: 247px;
+	height: 24px;
+}
+
+.decoration__top{
+	width: 232px;
+	height: 43px;
+}
+
 .header{
 	width: 1600px;
 	height: 750px;
@@ -87,16 +97,15 @@ body{
 }
 
 .h1__home{
-	margin: 0 auto;
+	margin-left: 0px;
+	letter-spacing: -5px;
 }
 
 
 .decoration-white{
-	width: 232px;
-	height: 43px;
 	background-image: url("../img/header/decoration.png");
 	margin-left: 510px;
-	margin-top: 34px;
+	margin-top: 25px;
 	margin-bottom: 33px;
 }
 
@@ -141,6 +150,87 @@ body{
 }
 
 .right-food{
+	width: 1600px;
+	height: 710px;
+	padding-top: 100px;
 	background: url("../img/right_food/background.png");
 	1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
 }
+
+.h2--gold{
+	color: #cc9900;
+	font-family: "Yeseva One";
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.decoration--yellow{
+	margin-top: 16px;
+	background: url("../img/right_food/decoration.png");
+}
+
+.quote{
+	width: 409px;
+	height: 111px;
+	color: #4c4c4c;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 27px;
+}
+
+.right-food__wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.quote-author{
+	text-align: center;
+	margin-top: 52px;
+}
+
+.ingredients{
+	width: 1600px;
+	height: 758px;
+	background: url("../img/flower/bg.png");
+	padding-top: 100px;
+}
+
+.ingredients__info{
+	margin-left: 640px;
+	width: 570px;
+	height: 557px;
+	border: 1px solid #fbf7c0;
+	background-color: #000000;
+	opacity: 0.67;
+}
+
+.h2--white{
+	color: #ffffff;
+	font-family: "Yeseva One";
+	font-size: 36px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.decoration__for_ingridients{
+	background: url("../img/flower/decoration.png");
+	margin: 20px auto 55px auto ;
+}
+
+.p{
+	width: 409px;
+	height: 111px;
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	margin: 0 auto;
+
+
