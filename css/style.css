@@ -15,7 +15,7 @@
 @import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Yeseva+One&subset=cyrillic,cyrillic-ext,latin-ext');
 
 body{
-	max-width: 1600px;
+	min-width: 1600px;
 	position: relative;
 	font-family: 'Gentium Book Basic', serif;
 	font-family: 'Yeseva One', cursive;
@@ -232,5 +232,95 @@ body{
 	line-height: 24px;
 	text-align: center;
 	margin: 0 auto;
+}
 
 
+.menu{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: url('../img/price/background.png') no-repeat;
+}
+
+.menu .container{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+ .menu__block-left{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.menu__block-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.menu__block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.menu__name{
+	font-weight: 400;
+	line-height: 24px;
+	color: #c89f2d;
+	font-family: "Yeseva One";
+	font-size: 21px;
+}
+
+.menu__price{
+	font-weight: 400;
+	line-height: 24px;
+	color: #c89f2d;
+	font-family: "Yeseva One";
+	font-size: 21px;
+}
+
+.menu__title{
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu__list{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.reviews{
+	width: 100%;
+	min-height: 760px;
+	background: url('../img/barbecue/bg.png') no-repeat;
+}
+
+.reviews .container{
+	padding: 100px 415px;	
+}
+
+
+.reviews__info{
+	width: 770px;
+	height: 560px;
+	border: 1px solid #fbf7c0;
+	background-color: #000000;
+	opacity: 0.8;
+}
+
+.reviews__quote{
+	line-height: 45px;
+	color: #dde0df;
+	font-family: "Gentium Book Basic";
+	font-size: 25px;
+	font-weight: 700;
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: 400;
+}
