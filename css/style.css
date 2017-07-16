@@ -12,66 +12,83 @@
 // 	font-style: normal; 
 // }
 
-@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Yeseva+One&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700|Geo|Lato|Open+Sans:400,400i,700|Yeseva+One');
 
 body{
-	min-width: 1600px;
+	min-width: 1170px;
 	position: relative;
-	font-family: 'Gentium Book Basic', serif;
-	font-family: 'Yeseva One', cursive;
-	font-family: 'Lato', sans-serif;
 	font-family: 'Open Sans', sans-serif;
 }
 
 
 .container{
-	width: 1250px;
+	width: 1170px;
 	margin: 0 auto;
 }
-
+.container--big{
+	width: 1210px;
+}
 .decoration{
-	width: 247px;
-	height: 24px;
-}
-
-.decoration__top{
-	width: 232px;
-	height: 43px;
-}
-
-.header{
-	width: 1600px;
-	height: 750px;
-	background-image: url("../img/header/bg.png");
 	display: flex;
-	justify-content: space-between;
-}
-
- .nav{
- 	margin-top: 50px;
- 	margin-left: 235px;
- }
-
-.nav__link{
-	color: #ffffff;
-	font-family: "Gentium Book Basic";
-	font-size: 21px;
-	font-weight: 700;
-	margin-left: 30px;
 	justify-content: center;
 }
 
-.logo{
-	width: 128px;
-	height: 92px;
-	
+.home{
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/header/bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.home .decoration{
+	margin: 34px 0;
+}
+.h1--center{
+	text-align: center;
+}
+.home .container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.social__header{
+.header{
+	width: 100%;
+	height: 110px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.header .container{
 	display: flex;
-	justify-content: space-between;
-	margin-left: 18px;
-	margin-top: 50px;
+	align-items: center;
+}
+
+.nav{
+	display: flex;
+}
+
+.nav__link{
+	display: block;
+	padding: 0 20px;
+	color: #ffffff;
+	font-family: 'Gentium Book Basic', serif;
+	font-size: 21px;
+	font-weight: 700;
+	transition: opacity 0.25s linear;
+}
+
+.nav__link:hover{
+	opacity: 0.5;
+}
+
+.logo{
+	margin-right: auto;
 }
 
 .social__item {
@@ -85,33 +102,26 @@ body{
 	margin-left: 0;
 }
 
-.logo_nav_social{
-	display: flex;
-}
 
-.home{
-	position: absolute;
-	top: 235px;
-    text-align: center;
-	margin-left: 140px;
-}
-
-.h1__home{
-	margin-left: 0px;
-	letter-spacing: -5px;
-}
-
-
-.decoration-white{
-	background-image: url("../img/header/decoration.png");
-	margin-left: 510px;
-	margin-top: 25px;
-	margin-bottom: 33px;
-}
 
 .button{
-	width: 228px;
 	height: 57px;
+	text-align: center;
+	line-height: 57px;
+	vertical-align: middle;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 0 50px;
+	transition: opacity .25s linear;
+}
+.button:hover{
+	opacity: .7;
+}
+.home .button--dark{
+	margin-right: 30px;
 }
 
 .button-wrapper{
@@ -123,154 +133,138 @@ body{
 .button--dark{
 	border: 1px solid #000000;
 	background-color: rgba(0, 0, 0, 0.7);
-	opacity: 0.8;
-	padding: 22px 52px;
-	color: #ffffff;
-	font-family: Lato;
-	font-size: 18px;
-	font-weight: 400;
-	text-transform: uppercase;
-	margin-right: 30px;
-	display: flex;
-	align-items: center;
 }
 
 .button--light{
 	border: 1px solid #ffffff;
 	background-color: rgba(255, 255, 255, 0.28);
-	opacity: 0.7;
-	padding: 22px 52px;
-	color: #ffffff;
-	font-family: Lato;
-	font-size: 18px;
-	font-weight: 400;
-	text-transform: uppercase;
-	display: flex;
-	align-items: center;
 }
 
 .right-food{
-	width: 1600px;
-	height: 710px;
-	padding-top: 100px;
-	background: url("../img/right_food/background.png");
-	1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+	padding: 55px 0 30px;
+	box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+	background-image: linear-gradient(-43deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%), url("../img/right_food/bg-2.png");
+	background-size: cover;
 }
 
 .h2--gold{
 	color: #cc9900;
-	font-family: "Yeseva One";
-	font-size: 36px;
-	font-weight: 400;
-	line-height: 24px;
 }
 
-.decoration--yellow{
-	margin-top: 16px;
-	background: url("../img/right_food/decoration.png");
-}
 
 .quote{
-	width: 409px;
-	height: 111px;
 	color: #4c4c4c;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-	text-align: center;
-	margin-top: 27px;
 }
 
+.right-food .quote{
+	text-align: center;
+	max-width: 410px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.right-food .decoration{
+	margin-top: 15px;
+}
 .right-food__wrapper{
 	display: flex;
 	justify-content: center;
 }
 
-.quote-author{
-	text-align: center;
+.right-food .quote-author{
 	margin-top: 52px;
+	text-align: center;
 }
 
+.right-food__col-right{
+	margin-left: 25px;
+}
 .ingredients{
-	width: 1600px;
-	height: 758px;
-	background: url("../img/flower/bg.png");
-	padding-top: 100px;
+	background-image: url("../img/flower/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 100px 0;
 }
-
+.ingredients .container{
+	display: flex;
+}
 .ingredients__info{
-	margin-left: 640px;
-	width: 570px;
-	height: 557px;
+	margin-left: auto;
+	max-width: 570px;
 	border: 1px solid #fbf7c0;
 	background-color: #000000;
 	opacity: 0.67;
+	padding: 80px 70px;
 }
 
-.h2--white{
-	color: #ffffff;
-	font-family: "Yeseva One";
-	font-size: 36px;
-	font-weight: 400;
+.ingredients__info .p{
 	text-align: center;
-	margin-top: 80px;
+	margin-top: 30px;
+	margin-bottom: 70px;
+}
+.ingredients__info .decoration{
+	margin-top: 16px;
 }
 
-.decoration__for_ingridients{
-	background: url("../img/flower/decoration.png");
-	margin: 20px auto 55px auto ;
+.ingredients__list{
+	display: flex;
+	justify-content: space-between;
+}
+.ingredients__item{
+	width: 110px;
+	height: 110px;
+	border: 5px solid rgba(255, 255, 255, 0.09);
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
-.p{
-	width: 409px;
-	height: 111px;
-	color: #ffffff;
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	text-align: center;
-	margin: 0 auto;
+.ingredients__item--cereals{
+	background-image: url("../img/flower/cereals.png");
 }
 
+.ingredients__item--image-orange{
+	background-image: url("../img/flower/image-orange.png");
+}
 
+.ingredients__item--bread{
+	background-image: url("../img/flower/bread.png");
+}
 .menu{
-	padding-top: 100px;
-	padding-bottom: 100px;
-	background: url('../img/price/background.png') no-repeat;
+	padding: 30px 0 100px;
+	background-image: url('../img/price/bg2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .menu .container{
 	display: flex;
-	justify-content: space-around;
-
-}
-
- .menu__block-left{
-	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
 
 }
-
-.menu__block-right{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+.menu .decoration{
+	margin-top: 16px;
 }
 
-.menu__block{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.menu__block-left, .menu__block-right{
+	width: calc(50% - 85px);
+}
+.p--dark{
+	color: #4c4c4c;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
 }
 
 .menu__name{
 	font-weight: 400;
 	line-height: 24px;
 	color: #c89f2d;
-	font-family: "Yeseva One";
+	font-family: 'Yeseva One', cursive;
 	font-size: 21px;
 }
 
@@ -282,45 +276,82 @@ body{
 	font-size: 21px;
 }
 
-.menu__title{
-	display: flex;
-	justify-content: space-between;
+.menu__block{
+	margin-top: 70px;
 }
 
-.menu__list{
-	list-style: none;
+.menu__title{
+	padding-bottom: 12px;
+	margin-bottom: 12px;
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
+	border-bottom: 1px solid rgba(200, 159, 45, .5);
+}
+
+.menu__item{
+	margin-top: 35px;
 }
 
 .reviews{
 	width: 100%;
-	min-height: 760px;
-	background: url('../img/barbecue/bg.png') no-repeat;
+	background-image: url('../img/barbecue/bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
+.reviews{
+	padding: 100px 0;	
+}
 .reviews .container{
-	padding: 100px 415px;	
+	display: flex;
+	justify-content: center;
 }
-
 
 .reviews__info{
-	width: 770px;
-	height: 560px;
 	border: 1px solid #fbf7c0;
-	background-color: #000000;
-	opacity: 0.8;
+	background-color: rgba(0, 0, 0, .7);
+	padding: 82px 74px 103px;
+	max-width: 770px;
 }
 
 .reviews__quote{
 	line-height: 45px;
 	color: #dde0df;
-	font-family: "Gentium Book Basic";
+	font-family: 'Gentium Book Basic', serif;
 	font-size: 25px;
 	font-weight: 700;
+	text-align: center;
+	position: relative;
+}
+
+.reviews__quote::before{
+	content: '“';
+	color: rgba(242, 244, 244, 0.47);
+	font-family: Georgia;
+	font-size: 96px;
+	font-weight: 400;
+	line-height: 45px;
+	position: absolute;
+	top: 17px;
+	left: -39px;
+}
+
+.cite{
 	color: #ffffff;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+.reviews .decoration{
+	margin-top: 23px;
+	margin-bottom: 30px;
+}
+
+.reviews .cite{
+	margin-top: 30px;
 }
