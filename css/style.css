@@ -94,7 +94,11 @@ body{
 .social--header{
 	font-size: 21px;
 	width: 120px;
+	height: 22px;
 	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .social--header .social__item{
@@ -103,17 +107,11 @@ body{
 	font-size: 21px;
 	font-weight: 400;
 	margin-left: 13px;
-	transition: font-size 0.25s linear;
-	transition: margin-right 0.25s linear;
-	transition: margin-left 0.25s linear;
+	transition: font-size 0.15s linear;
 }
 
 .social--header .social__item:hover{
 	font-size: 25px;
-}
-
-.social--header .social__item:first-child:hover{
-	margin-left: 0;
 }
 
 .social__item:first-child{
