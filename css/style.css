@@ -94,7 +94,7 @@ body{
 .social--header{
 	font-size: 21px;
 	width: 120px;
-	display: flex;
+	text-align: center;
 }
 
 .social--header .social__item{
