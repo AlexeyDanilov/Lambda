@@ -91,17 +91,27 @@ body{
 	margin-right: auto;
 }
 
-.social__item {
-	width: 21px;
-	height: 21px;
-	margin-left: 16px;
-	background-color: red;
+.social--header{
+	font-size: 21px;
+	width: 120px;
+}
+
+.social--header .social__item{
+	color: #dab33e;
+	font-family: "Font Awesome";
+	font-size: 21px;
+	font-weight: 400;
+	margin-left: 13px;
+	transition: font-size 0.25s linear;
+}
+
+.social--header .social__item:hover{
+	font-size: 25px;
 }
 
 .social__item:first-child{
 	margin-left: 0;
 }
-
 
 
 .button{
@@ -150,7 +160,6 @@ body{
 .h2--gold{
 	color: #cc9900;
 }
-
 
 .quote{
 	color: #4c4c4c;
@@ -522,8 +531,6 @@ select, input{
 }
 
 .social__footer{
-	width: 88px;
-	height: 17px;
 	display: flex;
 	margin: 56px auto 0 auto; 
 
@@ -532,5 +539,17 @@ select, input{
 .social__footer .social__item{
 	width: 16px;
 	height: 16px;
-	background-color: red;
+	color: white;
+	font-family: "Font Awesome";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-right: 11px;
+	transition: opacity 0.25s linear;
 }
+
+.social__footer .social__item:hover{
+	opacity: 0.6;
+}
+
+
