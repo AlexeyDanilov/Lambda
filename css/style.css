@@ -107,11 +107,11 @@ body{
 	font-size: 21px;
 	font-weight: 400;
 	margin-left: 13px;
-	transition: font-size 0.15s linear;
+	transition: transform 0.2s linear;
 }
 
 .social--header .social__item:hover{
-	font-size: 25px;
+	transform: scale(1.5);
 }
 
 .social__item:first-child{
