@@ -22,11 +22,13 @@ body{
 
 
 .container{
-	width: 1170px;
+	width: 100%;
+	max-width: 1170px;
 	margin: 0 auto;
+	padding: 0 20px; 
 }
 .container--big{
-	width: 1210px;
+	max-width: 1210px;
 }
 .decoration{
 	display: flex;
@@ -93,7 +95,6 @@ body{
 
 .social--header{
 	font-size: 21px;
-	width: 120px;
 	height: 22px;
 	text-align: center;
 	display: flex;
@@ -102,16 +103,17 @@ body{
 }
 
 .social--header .social__item{
+	display: block;
 	color: #dab33e;
 	font-family: "Font Awesome";
 	font-size: 21px;
 	font-weight: 400;
-	margin-left: 13px;
-	transition: transform 0.2s linear;
+	padding: 0 8px;
+	transition: opacity 0.2s linear;
 }
 
 .social--header .social__item:hover{
-	transform: scale(1.5);
+	opacity: .6;
 }
 
 .social__item:first-child{
@@ -371,12 +373,11 @@ body{
 }
 
 .reservation{
-	width: 100%;
-	min-height: 710px;
 	background-image: url('../img/food/bg.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	padding-top: 100px;
+	background-size: cover;
+	padding: 100px 0;
 }
 
 .reservation .container{
@@ -385,18 +386,21 @@ body{
 }
 
 .reservation__info{
-	width: 430px;
+	width: 50%;
 	text-align: center;
+	//margin-left: 30px;
+	padding: 0 110px 0 70px;
 }
 
 .reservation__images img{
 	display: block;
 }
-
+.reservation__images img:first-child{
+	margin-right: 30px;s
+}
 .reservation__images{
-	width: 570px;
+	width: 50%;
 	display: flex;
-	justify-content: space-between;
 }
 
 
@@ -407,21 +411,18 @@ body{
 
 .reservation__info .form{
 	margin-top: 46px;
-	/* display: flex;
-	flex-direction: column;
-	justify-content: space-between; */
 }
 
-.form__top{
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 28px;
+.reservation__info .p{
+	margin-bottom: 20px;
+	display: block;
 }
 
-.form__bottom{
+.reservation__inputs{
 	display: flex;
-	justify-content: space-between;
-	text-align: right;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+
 }
 
 label{
@@ -432,16 +433,22 @@ label{
 	text-align: left;
 	display: flex;
 	flex-direction: column;
+	width: calc(50% - 30px);
+	margin: 0 15px 30px;
 }
 
 select, input{
-	width: 200px;
 	height: 36px;
 	vertical-align: middle;
-	padding-left: 10px;
+	padding: 0 10px;
 	margin-top: 10px;
+	border: 1px solid #c8c6c6;
+	background-color: rgba(255, 255, 255, 0.4);
 }
 
+.reservation__form .submit{
+	margin-top: 33px;	
+}
 .submit{
 	width: 200px;
 	height: 36px;
@@ -455,17 +462,14 @@ select, input{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
-	margin-top: 33px;	
 }
 
 .submit:hover{
 	opacity: 0.7;
 }
 
-.form__top input:hover,
-.form__bottom input:hover{
-	border: 1px solid #c89f2d;
-	background-color: rgba(255, 255, 255, 0.4);
+select:hover, input:hover{
+	border-color: #c89f2d;
 }
 
 .footer{
@@ -475,7 +479,7 @@ select, input{
 	padding-top: 52px;
 }
 
-.footer__block{
+.footer__list{
 	display: flex;
 	justify-content: space-between;
 }
@@ -485,11 +489,11 @@ select, input{
 }
 
 .footer--big{
-	width: 370px;
+	max-width: 370px;
 }
 
 .footer--little{
-	width: 230px;
+	max-width: 230px;
 }
 
 .h3--white{
@@ -535,13 +539,14 @@ select, input{
 	text-align: center;
 }
 
-.social__footer{
+.social.social--footer{
 	display: flex;
-	margin: 56px auto 0 auto; 
+	justify-content: center;
+	margin: 50px auto 0; 
 
 }
 
-.social__footer .social__item{
+.social--footer .social__item{
 	width: 16px;
 	height: 16px;
 	color: white;
@@ -553,7 +558,7 @@ select, input{
 	transition: opacity 0.25s linear;
 }
 
-.social__footer .social__item:hover{
+.social--footer .social__item:hover{
 	opacity: 0.6;
 }
 
